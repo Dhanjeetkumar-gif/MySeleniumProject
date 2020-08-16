@@ -32,11 +32,11 @@ public class TestBase {
 public static void Initialization() {
 	String browserName=prop.getProperty("browser");
 	if(browserName.equals("Chrome")) {
-		System.setProperty("webdriver.chrome.driver",prop.getProperty("ChromePath") );
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\rageaholic\\eclipse-workspace2\\MySeleniumProject\\src\\Drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 	}
 	else if(browserName.equals("FF")) {
-		System.setProperty("webdriver.gecko.driver",prop.getProperty("FFPath") );
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\rageaholic\\eclipse-workspace2\\MySeleniumProject\\src\\Drivers\\geckodriver.exe" );
 		driver=new FirefoxDriver();
     }
     else if(browserName.equals("IE")) {
@@ -50,8 +50,6 @@ public static void Initialization() {
 	long implicitlytout=Integer.parseInt(prop.getProperty("Implicitlywaittimeout"));
 	driver.manage().timeouts().pageLoadTimeout(pageloadtout, TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(implicitlytout,TimeUnit.SECONDS );
-	
-	
 	
 }
 
