@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,9 +39,20 @@ public static void Initialization() {
 		System.setProperty("webdriver.gecko.driver",prop.getProperty("FFPath") );
 		driver=new FirefoxDriver();
     }
-    else if(browserName.equals("IE"))
+    else if(browserName.equals("IE")) {
 	System.setProperty("webdriver.ie.driver",prop.getProperty("IEPath") );
 	driver=new InternetExplorerDriver();
+	}
+	driver.get(prop.getProperty("URL"));
+	driver.manage().deleteAllCookies();
+	driver.manage().window().maximize();
+	long pageloadtout=Integer.parseInt(prop.getProperty("PageloadTimeout"));
+	long implicitlytout=Integer.parseInt(prop.getProperty("Implicitlywaittimeout"));
+	driver.manage().timeouts().pageLoadTimeout(pageloadtout, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(implicitlytout,TimeUnit.SECONDS );
+	
+	
+	
 }
 
 }
