@@ -17,7 +17,7 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//input[@id='wp-submit']")
 	WebElement Loginbtn;
 	
-    public void loginPage() {
+    public LoginPage() {
     	PageFactory.initElements(driver, this);
     }
     public HomePage getLoggedin(String uid,String pass) {
@@ -32,3 +32,4 @@ public class LoginPage extends TestBase{
     }
 	
 }
+
