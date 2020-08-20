@@ -7,9 +7,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.qa.TestBase.TestBase;
 
-public class Listener extends TestBase implements org.testng.ITestListener  {
+public class Listener implements ITestListener  {
+	//ExtentReports extent=ExtentReportNG.
 	Screenshot scrnshot;
 	
 
@@ -28,9 +30,10 @@ public class Listener extends TestBase implements org.testng.ITestListener  {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		String ssName=result.getTestName();
-		File src2=scrnshot.takeScreenshot();
+		String src2=scrnshot.takeScreenshot();
+		File file=new File(src2);
 		try {
-			FileUtils.copyFile(src2, new File(System.getProperty("user.dir")+"\\MySeleniumProject\\Output\\"
+			FileUtils.copyFile(file, new File(System.getProperty("user.dir")+"\\MySeleniumProject\\Output\\"
 					+ "Screenshot\\"+ssName+".jpg"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

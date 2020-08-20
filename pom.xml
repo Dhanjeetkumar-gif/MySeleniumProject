@@ -84,6 +84,13 @@
 			<artifactId>extentreport</artifactId>
 			<version>0.1.15</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.4</version>
+</dependency>
+		
         </dependencies>
   	    <build>
 		
@@ -98,6 +105,15 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+			
+		<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+        </configuration>
+    </plugin>
 		</plugins>
 	
 		
@@ -110,4 +126,5 @@
 			</testResource>
 		</testResources>
 	  </build>
+	 
      </project>

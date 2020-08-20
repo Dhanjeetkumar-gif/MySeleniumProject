@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-16T18:08:00 IST" name="Suite" finished-at="2020-08-16T18:08:38 IST" duration-ms="38020">
+  <suite started-at="2020-08-20T15:54:56Z" name="Suite" finished-at="2020-08-20T15:56:08Z" duration-ms="72642">
     <groups>
     </groups>
-    <test started-at="2020-08-16T18:08:00 IST" name="Test" finished-at="2020-08-16T18:08:38 IST" duration-ms="38020">
+    <test started-at="2020-08-20T15:54:56Z" name="Test" finished-at="2020-08-20T15:56:08Z" duration-ms="72642">
       <class name="com.qa.TestPages.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@6f96c77]" started-at="2020-08-16T18:08:00 IST" name="setup" finished-at="2020-08-16T18:08:15 IST" duration-ms="14302" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:24:56Z" name="setup" finished-at="2020-08-20T21:25:41Z" duration-ms="45654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getLoggedIn()[pri:0, instance:com.qa.TestPages.LoginpageTest@6f96c77]" started-at="2020-08-16T18:08:15 IST" name="getLoggedIn" finished-at="2020-08-16T18:08:15 IST" duration-ms="23" status="FAIL">
+        <test-method signature="getLoggedIn()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:25:41Z" name="getLoggedIn" finished-at="2020-08-20T21:25:41Z" duration-ms="69" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.qa.TestPages.LoginpageTest.getLoggedIn(LoginpageTest.java:37)
+	at com.qa.TestPages.LoginpageTest.getLoggedIn(LoginpageTest.java:37)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLoggedIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@6f96c77]" started-at="2020-08-16T18:08:15 IST" name="tearDown" finished-at="2020-08-16T18:08:21 IST" duration-ms="6162" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:25:41Z" name="tearDown" finished-at="2020-08-20T21:25:48Z" duration-ms="6528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@6f96c77]" started-at="2020-08-16T18:08:21 IST" name="setup" finished-at="2020-08-16T18:08:33 IST" duration-ms="11965" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:25:48Z" name="setup" finished-at="2020-08-20T21:26:03Z" duration-ms="15593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@6f96c77]" started-at="2020-08-16T18:08:33 IST" name="titleCheck" finished-at="2020-08-16T18:08:33 IST" duration-ms="5" status="FAIL">
+        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:26:03Z" name="titleCheck" finished-at="2020-08-20T21:26:03Z" duration-ms="8" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.qa.TestPages.LoginpageTest.titleCheck(LoginpageTest.java:28)
+	at com.qa.TestPages.LoginpageTest.titleCheck(LoginpageTest.java:28)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@6f96c77]" started-at="2020-08-16T18:08:33 IST" name="tearDown" finished-at="2020-08-16T18:08:38 IST" duration-ms="5434" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:26:04Z" name="tearDown" finished-at="2020-08-20T21:26:08Z" duration-ms="4664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -11,16 +11,18 @@ import com.qa.TestBase.TestBase;
 
 
 public class Screenshot extends TestBase{
-	File src;
+static String dest;
 	
-	public File takeScreenshot() {
+	public static String takeScreenshot() {
 		try {
-			src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			String dest=System.getProperty("user.dir")+"\\Output\\Screenshot"+".png";
+			FileUtils.copyFile(src, new File(dest));
 		}
 		catch(Exception e) {
 			
 		}
-		return src;
+		return dest;
 	}
 
 }
