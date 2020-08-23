@@ -50,7 +50,6 @@ public class TestListener extends TestBase implements ITestListener {
 			e.printStackTrace();
 		}
 	}
-
 	public void onTestFailure(ITestResult result){
 		log.info("*** Test execution " + result.getMethod().getMethodName() + " failed...");
 		log.info((result.getMethod().getMethodName() + " failed!"));
@@ -76,3 +75,4 @@ public class TestListener extends TestBase implements ITestListener {
 	    return destination;
 	}
 }
+
