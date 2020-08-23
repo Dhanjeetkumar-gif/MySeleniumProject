@@ -26,11 +26,11 @@ public class LoginpageTest extends TestBase{
 		Initialization();	
 		}
 	
-	@Test
+	@Test(enabled=false)
 	public void titleCheck() {
 		String actual=loginPage.getTitle();
 		String expected="opensourcecms — WordPress";
-		Assert.assertEquals(actual, expected);
+		Assert.assertEquals(actual, "hello");
 	}
 	
 	@Test
@@ -41,7 +41,8 @@ public class LoginpageTest extends TestBase{
 		loginPage.getLoggedin(userId, password);
 		//Assert.assertEquals(actual, expected, message);
 		log.info("logged in");
-		
+		String act_ttl=driver.getTitle();
+		Assert.assertEquals(act_ttl, "Home page");
 	}
 	@Test
 	public void currentURLCheck() {

@@ -10,7 +10,6 @@
         <methods>
           <include name="getLoggedIn"/>
           <include name="tearDown"/>
-          <include name="titleCheck"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.qa.TestPages.LoginpageTest -->
