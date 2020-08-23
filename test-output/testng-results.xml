@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-23T22:19:27 IST" name="Suite" finished-at="2020-08-23T22:21:26 IST" duration-ms="118404">
+  <suite started-at="2020-08-23T23:35:40 IST" name="Suite" finished-at="2020-08-23T23:38:08 IST" duration-ms="147372">
     <groups>
     </groups>
-    <test started-at="2020-08-23T22:19:27 IST" name="Test" finished-at="2020-08-23T22:21:26 IST" duration-ms="118404">
+    <test started-at="2020-08-23T23:35:40 IST" name="Test" finished-at="2020-08-23T23:38:08 IST" duration-ms="147372">
       <class name="com.qa.TestPages.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T22:19:27 IST" name="setup" finished-at="2020-08-23T22:20:41 IST" duration-ms="73348" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T23:35:40 IST" name="setup" finished-at="2020-08-23T23:37:25 IST" duration-ms="104793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T22:20:41 IST" name="titleCheck" finished-at="2020-08-23T22:20:48 IST" duration-ms="6930" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="getLoggedIn()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T23:37:25 IST" name="getLoggedIn" finished-at="2020-08-23T23:37:35 IST" duration-ms="9415" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Dashboard ‹ opensourcecms — WordPress] but found [Log In ‹ opensourcecms — WordPress]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.TestPages.LoginpageTest.titleCheck(LoginpageTest.java:36)
+              <![CDATA[java.lang.AssertionError: expected [Dashboard ‹ opensourcecms — WordPress] but found [Log In ‹ opensourcecms — WordPress]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.qa.TestPages.LoginpageTest.getLoggedIn(LoginpageTest.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,11 +54,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoggedIn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T23:37:36 IST" name="tearDown" finished-at="2020-08-23T23:37:39 IST" duration-ms="3605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T23:37:39 IST" name="setup" finished-at="2020-08-23T23:38:05 IST" duration-ms="25257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T23:38:05 IST" name="titleCheck" finished-at="2020-08-23T23:38:05 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T22:20:54 IST" name="tearDown" finished-at="2020-08-23T22:21:25 IST" duration-ms="31534" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T23:38:05 IST" name="tearDown" finished-at="2020-08-23T23:38:08 IST" duration-ms="2857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -22,11 +22,12 @@ public class LoginPage  extends TestBase{
     public LoginPage() {
     	PageFactory.initElements(driver, this);
     }
-    public HomePage getLoggedin(String uid,String pass) {
+    public HomePage getLoggedin(String uid,String pass) throws InterruptedException {
     	userId.sendKeys(uid);
     	log.info("user id entered");
     	password.sendKeys(pass);
     	log.info("password entered");
+    	Thread.sleep(5000);
     	Loginbtn.click();
     	log.info("password entered");
     	return new HomePage();

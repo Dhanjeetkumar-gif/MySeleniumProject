@@ -26,21 +26,28 @@ public class LoginpageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
 	
+	
+	public LoginpageTest(){
+		super();
+	}
 	@BeforeMethod
 		public void setup() {
 		Initialization();	
+		loginPage=new LoginPage();
 		}
+	
 	
 	@Test
 	public void titleCheck() {
+		log.info("ttl");
 		String actual=loginPage.getTitle();
 		log.info("get title");
-		String expected="opensourcecms — WordPress";
-		Assert.assertEquals(actual, "hello");
+		String expected="Log In ‹ opensourcecms — WordPress";
+		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test(enabled=false)
-	public void getLoggedIn() {
+	@Test()
+	public void getLoggedIn() throws InterruptedException {
 		
 		String userId=prop.getProperty("userId");
 		log.info("fetched uid from config file");
@@ -49,7 +56,9 @@ public class LoginpageTest extends TestBase{
 		loginPage.getLoggedin(userId, password);
 		log.info("logged in");
 		String act_ttl=driver.getTitle();
-		Assert.assertEquals(act_ttl, "Home page");
+		System.out.println(act_ttl+"--"+"Dashboard ‹ opensourcecms — WordPress");
+		System.out.println(driver.getCurrentUrl());
+		Assert.assertEquals(act_ttl, "Dashboard ‹ opensourcecms — WordPress");
 	}
 	@Test(enabled=false)
 	public void currentURLCheck() {
