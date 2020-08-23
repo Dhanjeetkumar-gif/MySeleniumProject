@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-23T18:09:09 IST" name="Suite" finished-at="2020-08-23T18:10:33 IST" duration-ms="84026">
+  <suite started-at="2020-08-23T22:19:27 IST" name="Suite" finished-at="2020-08-23T22:21:26 IST" duration-ms="118404">
     <groups>
     </groups>
-    <test started-at="2020-08-23T18:09:09 IST" name="Test" finished-at="2020-08-23T18:10:33 IST" duration-ms="84026">
+    <test started-at="2020-08-23T22:19:27 IST" name="Test" finished-at="2020-08-23T22:21:26 IST" duration-ms="118404">
       <class name="com.qa.TestPages.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T18:09:10 IST" name="setup" finished-at="2020-08-23T18:09:58 IST" duration-ms="48415" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T22:19:27 IST" name="setup" finished-at="2020-08-23T22:20:41 IST" duration-ms="73348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="currentURLCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T18:09:58 IST" name="currentURLCheck" finished-at="2020-08-23T18:09:59 IST" duration-ms="688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- currentURLCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T18:09:59 IST" name="tearDown" finished-at="2020-08-23T18:10:05 IST" duration-ms="5955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T18:10:05 IST" name="setup" finished-at="2020-08-23T18:10:20 IST" duration-ms="15660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getLoggedIn()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T18:10:20 IST" name="getLoggedIn" finished-at="2020-08-23T18:10:20 IST" duration-ms="34" status="FAIL">
+        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T22:20:41 IST" name="titleCheck" finished-at="2020-08-23T22:20:48 IST" duration-ms="6930" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.qa.TestPages.LoginpageTest.getLoggedIn(LoginpageTest.java:41)
+at com.qa.TestPages.LoginpageTest.titleCheck(LoginpageTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,8 +49,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLoggedIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T18:10:22 IST" name="tearDown" finished-at="2020-08-23T18:10:33 IST" duration-ms="11279" status="PASS">
+        </test-method> <!-- titleCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-23T22:20:54 IST" name="tearDown" finished-at="2020-08-23T22:21:25 IST" duration-ms="31534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
