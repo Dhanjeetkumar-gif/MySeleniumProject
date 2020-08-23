@@ -1,47 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-20T15:54:56Z" name="Suite" finished-at="2020-08-20T15:56:08Z" duration-ms="72642">
+  <suite started-at="2020-08-22T23:04:07 IST" name="Suite" finished-at="2020-08-22T23:05:59 IST" duration-ms="112272">
     <groups>
     </groups>
-    <test started-at="2020-08-20T15:54:56Z" name="Test" finished-at="2020-08-20T15:56:08Z" duration-ms="72642">
+    <test started-at="2020-08-22T23:04:07 IST" name="Test" finished-at="2020-08-22T23:05:59 IST" duration-ms="112272">
       <class name="com.qa.TestPages.LoginpageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:24:56Z" name="setup" finished-at="2020-08-20T21:25:41Z" duration-ms="45654" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:04:07 IST" name="setup" finished-at="2020-08-22T23:04:24 IST" duration-ms="17142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getLoggedIn()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:25:41Z" name="getLoggedIn" finished-at="2020-08-20T21:25:41Z" duration-ms="69" status="FAIL">
+        <test-method signature="currentURLCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:04:24 IST" name="currentURLCheck" finished-at="2020-08-22T23:04:25 IST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentURLCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:04:25 IST" name="tearDown" finished-at="2020-08-22T23:04:41 IST" duration-ms="15997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:04:41 IST" name="setup" finished-at="2020-08-22T23:05:03 IST" duration-ms="21828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getLoggedIn()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:05:03 IST" name="getLoggedIn" finished-at="2020-08-22T23:05:03 IST" duration-ms="12" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.qa.TestPages.LoginpageTest.getLoggedIn(LoginpageTest.java:37)
+at com.qa.TestPages.LoginpageTest.getLoggedIn(LoginpageTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLoggedIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:25:41Z" name="tearDown" finished-at="2020-08-20T21:25:48Z" duration-ms="6528" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:05:03 IST" name="tearDown" finished-at="2020-08-22T23:05:19 IST" duration-ms="16091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:25:48Z" name="setup" finished-at="2020-08-20T21:26:03Z" duration-ms="15593" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:05:19 IST" name="setup" finished-at="2020-08-22T23:05:43 IST" duration-ms="23940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:26:03Z" name="titleCheck" finished-at="2020-08-20T21:26:03Z" duration-ms="8" status="FAIL">
+        <test-method signature="titleCheck()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:05:43 IST" name="titleCheck" finished-at="2020-08-22T23:05:43 IST" duration-ms="6" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.qa.TestPages.LoginpageTest.titleCheck(LoginpageTest.java:28)
+at com.qa.TestPages.LoginpageTest.titleCheck(LoginpageTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@4b14c583]" started-at="2020-08-20T21:26:04Z" name="tearDown" finished-at="2020-08-20T21:26:08Z" duration-ms="4664" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestPages.LoginpageTest@35cabb2a]" started-at="2020-08-22T23:05:43 IST" name="tearDown" finished-at="2020-08-22T23:05:59 IST" duration-ms="16273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

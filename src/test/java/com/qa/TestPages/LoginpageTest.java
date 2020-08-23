@@ -3,6 +3,9 @@ package com.qa.TestPages;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import javax.naming.spi.DirStateFactory.Result;
+
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,7 +17,7 @@ import com.qa.Pages.LoginPage;
 import com.qa.TestBase.TestBase;
 //@Listeners(com.qa.Utils.Listener.class)
 public class LoginpageTest extends TestBase{
-	
+	Logger log=Logger.getLogger(LoginpageTest.class);
 	LoginPage loginPage;
 	HomePage homePage;
 	
@@ -32,11 +35,19 @@ public class LoginpageTest extends TestBase{
 	
 	@Test
 	public void getLoggedIn() {
+		
 		String userId=prop.getProperty("userId");
 		String password=prop.getProperty("password");
 		loginPage.getLoggedin(userId, password);
 		//Assert.assertEquals(actual, expected, message);
+		log.info("logged in");
 		
+	}
+	@Test
+	public void currentURLCheck() {
+		String exURL=driver.getCurrentUrl();
+		String acURL="https://s1.demo.opensourcecms.com/wordpress/wp-login.php";
+		Assert.assertEquals(acURL, exURL);
 	}
 	
 	

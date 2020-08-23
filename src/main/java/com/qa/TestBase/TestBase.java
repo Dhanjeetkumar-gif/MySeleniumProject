@@ -6,12 +6,15 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class TestBase {
+	Logger log=Logger.getLogger(TestBase.class);
+	
 	public static WebDriver driver;
 	public static Properties prop;
 	public TestBase() {
@@ -33,6 +36,7 @@ public static void Initialization() {
 	String browserName=prop.getProperty("browser");
 	if(browserName.equals("Chrome")) {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\rageaholic\\eclipse-workspace2\\MySeleniumProject\\src\\Drivers\\chromedriver.exe");
+		
 		driver=new ChromeDriver();
 	}
 	else if(browserName.equals("FF")) {

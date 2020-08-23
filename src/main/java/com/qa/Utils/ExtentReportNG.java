@@ -25,6 +25,11 @@ public class ExtentReportNG extends TestBase implements ITestListener {
 		extent.setSystemInfo("HostNmae", "Localhost");
 		extent.setSystemInfo("Tester", "Dhanjeet Kumar");
 		extent.setSystemInfo("Browser",prop.getProperty("browser"));
+		
+		test = extent.createTest("");
+		String fileSeperator = System.getProperty("file.separator");
+		
+	
 	}
 	
 }
